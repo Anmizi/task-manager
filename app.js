@@ -20,7 +20,7 @@ const port = 3000
 
 const start = async () => {
   try {
-    await connectDB(process.env.MONGO_URL)
+    await connectDB(process.env.MONGODB_URI)
     app.listen(port, () => {
       console.log(`server is listening on port ${port}`);
     })
